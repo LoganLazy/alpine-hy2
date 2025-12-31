@@ -22,9 +22,10 @@
 ```bash
 apk add wget && wget --no-check-certificate -O install.sh [https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh](https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh) && chmod +x install.sh && ./install.sh```
 
+---
 快捷指令
 安装完成后，以后只需输入一个简单的命令即可管理服务：
-'''hy2'''
+hy2
 ## 📸 面板预览
 运行 hy2 后的管理菜单界面：
 '''==============================================
