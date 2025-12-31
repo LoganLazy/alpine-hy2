@@ -20,14 +20,14 @@
 在你的 Alpine 服务器终端执行以下命令：
 
 ```bash
-apk add wget && wget --no-check-certificate -O install.sh [https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh](https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh) && chmod +x install.sh && ./install.sh
+apk add wget && wget --no-check-certificate -O install.sh [https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh](https://raw.githubusercontent.com/LoganLazy/alpine-hy2/main/install.sh) && chmod +x install.sh && ./install.sh'''
 
 快捷指令
 安装完成后，以后只需输入一个简单的命令即可管理服务：
-hy2
+'''hy2'''
 ## 📸 面板预览
 运行 hy2 后的管理菜单界面：
-==============================================
+'''==============================================
    Hysteria 2 Alpine 管理面板 (V3.0)   
 ==============================================
  系统状态:
@@ -41,11 +41,11 @@ hy2
   5. 重启服务      6. 修改 端口/密码
   7. 开启 BBR 加速 8. 升级 Hysteria
   9. 卸载脚本      0. 退出
-----------------------------------------------
+----------------------------------------------'''
 ##⚠️ 特别注意 (LXC 环境)
 如果你在 LXC 容器（如 Proxmox 的 Alpine 模板、LXD 容器）中运行，由于 UDP 发包限制，建议在宿主机执行以下命令优化网络性能：
-sysctl -w net.core.rmem_max=16777216
-sysctl -w net.core.wmem_max=16777216
+'''sysctl -w net.core.rmem_max=16777216
+sysctl -w net.core.wmem_max=16777216'''
 ##🛠 客户端配置说明
 本脚本使用的是 自签名证书。
 跳过证书验证：客户端（如 v2rayN / Nekobox）必须将 Insecure 或 跳过证书验证 设为 true。
